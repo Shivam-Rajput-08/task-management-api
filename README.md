@@ -22,6 +22,7 @@ This is a simple RESTful API for a Task Management System built with Node.js, Ex
 
 ## Project Structure
 
+```plaintext
 .
 ├── config
 │ └── db.js # MongoDB connection setup
@@ -40,6 +41,7 @@ This is a simple RESTful API for a Task Management System built with Node.js, Ex
 ├── server.js # Server setup
 ├── .env # Environment variables
 └── README.md # Project documentation
+```
 
 ## Getting Started
 
@@ -90,25 +92,22 @@ Here’s a quick guide on how to use the API with Postman.
    Method: POST
    Body:
 
-   ```````json
-
+   ```json
    {
-   "username": "Shivam",
-   "password": "ShivRaj"
+     "username": "Shivam",
+     "password": "ShivRaj"
    }
    ```
 
    Response:
 
-   ``````json
+   ```json
    {
      "_id": "user_id",
      "username": "Shivam",
      "token": "jwt_token"
    }
    ```
-
-   ```````
 
 2. **User Login:**
 
@@ -145,28 +144,29 @@ Here’s a quick guide on how to use the API with Postman.
 
    Body:
 
-   ````json
+   ```json
    {
-   "title": "Complete Project",
-   "description": "Finish the task management API",
-   "dueDate": "2024-08-15T00:00:00.000Z",
-   "status": "pending"
+     "title": "Complete Project",
+     "description": "Finish the task management API",
+     "dueDate": "2024-08-15T00:00:00.000Z",
+     "status": "pending"
    }
    ```
 
    Response:
+
    ```json
    {
-   "_id": "task_id",
-   "title": "Complete Project",
-   "description": "Finish the task management API",
-   "dueDate": "2024-08-15T00:00:00.000Z",
-   "status": "pending",
-   "user": "user_id",
-   "createdAt": "2024-08-09T00:00:00.000Z",
-   "updatedAt": "2024-08-09T00:00:00.000Z"
+     "_id": "task_id",
+     "title": "Complete Project",
+     "description": "Finish the task management API",
+     "dueDate": "2024-08-15T00:00:00.000Z",
+     "status": "pending",
+     "user": "user_id",
+     "createdAt": "2024-08-09T00:00:00.000Z",
+     "updatedAt": "2024-08-09T00:00:00.000Z"
    }
-   ````
+   ```
 
 4. **Get All Tasks:**
 
@@ -218,25 +218,27 @@ Here’s a quick guide on how to use the API with Postman.
 
    Body:
 
-   ````json
-   {
-   "title": "Complete Project (Updated)",
-   "status": "in-progress"
-   }
-   ```
-   Response:
    ```json
    {
-   "_id": "task_id",
-   "title": "Complete Project (Updated)",
-   "description": "Finish the task management API",
-   "dueDate": "2024-08-15T00:00:00.000Z",
-   "status": "in-progress",
-   "user": "user_id",
-   "createdAt": "2024-08-09T00:00:00.000Z",
-   "updatedAt": "2024-08-09T00:00:00.000Z"
+     "title": "Complete Project (Updated)",
+     "status": "in-progress"
    }
-   ````
+   ```
+
+   Response:
+
+   ```json
+   {
+     "_id": "task_id",
+     "title": "Complete Project (Updated)",
+     "description": "Finish the task management API",
+     "dueDate": "2024-08-15T00:00:00.000Z",
+     "status": "in-progress",
+     "user": "user_id",
+     "createdAt": "2024-08-09T00:00:00.000Z",
+     "updatedAt": "2024-08-09T00:00:00.000Z"
+   }
+   ```
 
 6. **Delete a Task:**
 
